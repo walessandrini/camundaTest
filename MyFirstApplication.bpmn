@@ -4,15 +4,15 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>Flow_0ljwtjj</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:serviceTask id="Activity_036lhx8" name="My fiirst task">
-      <bpmn:incoming>Flow_0ljwtjj</bpmn:incoming>
-      <bpmn:outgoing>Flow_0qdjpgy</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_0ljwtjj" sourceRef="StartEvent_1" targetRef="Activity_036lhx8" />
+    <bpmn:sequenceFlow id="Flow_0ljwtjj" sourceRef="StartEvent_1" targetRef="Activity_1i49r6k" />
     <bpmn:endEvent id="Event_17n8xuf">
       <bpmn:incoming>Flow_0qdjpgy</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_0qdjpgy" sourceRef="Activity_036lhx8" targetRef="Event_17n8xuf" />
+    <bpmn:sequenceFlow id="Flow_0qdjpgy" sourceRef="Activity_1i49r6k" targetRef="Event_17n8xuf" />
+    <bpmn:task id="Activity_1i49r6k" name="My first task">
+      <bpmn:incoming>Flow_0ljwtjj</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qdjpgy</bpmn:outgoing>
+    </bpmn:task>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0lrgxzg">
@@ -22,16 +22,20 @@
       <bpmndi:BPMNShape id="Event_17n8xuf_di" bpmnElement="Event_17n8xuf">
         <dc:Bounds x="472" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_036lhx8_di" bpmnElement="Activity_036lhx8">
-        <dc:Bounds x="270" y="78" width="100" height="80" />
+      <bpmndi:BPMNShape id="Activity_1i49r6k_di" bpmnElement="Activity_1i49r6k">
+        <dc:Bounds x="270" y="100" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0ljwtjj_di" bpmnElement="Flow_0ljwtjj">
         <di:waypoint x="186" y="118" />
-        <di:waypoint x="270" y="118" />
+        <di:waypoint x="228" y="118" />
+        <di:waypoint x="228" y="140" />
+        <di:waypoint x="270" y="140" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0qdjpgy_di" bpmnElement="Flow_0qdjpgy">
-        <di:waypoint x="370" y="118" />
+        <di:waypoint x="380" y="140" />
+        <di:waypoint x="421" y="140" />
+        <di:waypoint x="421" y="118" />
         <di:waypoint x="472" y="118" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
